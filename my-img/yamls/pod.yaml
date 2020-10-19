@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod-1
+spec:
+  serviceAccountName: console-sa
+  containers:
+  - name: mypod
+    image: platform-backend:latest
+    imagePullPolicy: IfNotPresent
+    command: ['sh']
+    args: ["-c", "while true; do echo hello world; sleep 1; done" ]
