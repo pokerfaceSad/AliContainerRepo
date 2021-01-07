@@ -1,1 +1,1 @@
-FROM k8s.gcr.io/build-image/debian-iptables:buster-v1.3.0
+FROM us.gcr.io/k8s-artifacts-prod/build-image/debian-iptables-amd64:v12.1.0
